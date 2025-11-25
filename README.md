@@ -1,1 +1,1 @@
-# AR.js-nex5t-examples
+# AR.js-next-examples
