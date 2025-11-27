@@ -1,7 +1,7 @@
 {
   "name": "ar.js-next-examples",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,13 +9,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@types/three": "^0.167.1",
-    "vite": "^7.2.4"
+    "@types/three": "^0.181.0",
+    "vite": "^7.2.4",
+    "vite-plugin-static-copy": "^3.1.4"
   },
   "dependencies": {
-    "@ar-js-org/arjs-plugin-artoolkit": "github:AR-js-org/arjs-plugin-artoolkit#main",
-    "@ar-js-org/arjs-plugin-threejs": "github:AR-js-org/arjs-plugin-threejs#main",
-    "ar.js-core": "github:AR-js-org/AR.js-core#feature-npm-package-fix",
-    "three": "^0.167.0"
+    "@ar-js-org/arjs-plugin-artoolkit": "github:AR-js-org/arjs-plugin-artoolkit#ccfc28376eb6d951467060aa35986b17a279dc0b",
+    "@ar-js-org/arjs-plugin-threejs": "github:AR-js-org/arjs-plugin-threejs#75702cc0670d9cd44b2e38533070c7903ff726f1",
+    "ar.js-core": "github:AR-js-org/AR.js-core#b8d626e210d3d46aa68af87053b3b3588083a05f",
+    "three": "^0.181.2"
   }
 }
