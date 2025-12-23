@@ -14,8 +14,8 @@
     "vite-plugin-static-copy": "^3.1.4"
   },
   "dependencies": {
-    "@ar-js-org/arjs-plugin-artoolkit": "github:AR-js-org/arjs-plugin-artoolkit#ccfc28376eb6d951467060aa35986b17a279dc0b",
-    "@ar-js-org/arjs-plugin-threejs": "github:AR-js-org/arjs-plugin-threejs#75702cc0670d9cd44b2e38533070c7903ff726f1",
+    "@ar-js-org/arjs-plugin-artoolkit": "^0.1.3",
+    "@ar-js-org/arjs-plugin-threejs": "^0.1.1",
     "ar.js-core": "github:AR-js-org/AR.js-core#b8d626e210d3d46aa68af87053b3b3588083a05f",
     "three": "^0.181.2"
   }
