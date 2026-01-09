@@ -8,7 +8,7 @@ import {
     SOURCE_TYPES,
     webcamPlugin,
     defaultProfilePlugin,
-} from "ar.js-core";
+} from "@ar-js-org/ar.js-next";
 
 import  {ArtoolkitPlugin} from  "@ar-js-org/arjs-plugin-artoolkit";
 
