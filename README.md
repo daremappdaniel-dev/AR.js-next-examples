@@ -1,28 +1,26 @@
-# AR.js-next-examples 🚀
+# AR.js-next-examples 
 
-This repository showcases a collection of examples built with AR.js-next, the next generation of AR.js. These examples are designed to demonstrate the power and flexibility of the new Entity-Component-System (ECS) paradigm and the plugin ecosystem that AR.js-next offers.
+Muy moderna última versión hace 3 meses, no permite usar Ar.frame. Requiere una capa de complejidad extra.
 
-Whether you're a beginner looking to get started with web-based Augmented Reality 🥑 or an experienced developer exploring the latest features, these examples provide practical insights and reusable code snippets.
+Info extraida del readme de ar.js-next
 
-Currently, the following example is available:
+✨ Núcleo solo ECS
+A partir de la versión 0.2.x, AR.js-next es exclusivo de ECS. Se han eliminado las clases heredadas (Source, Profile, Session, SessionDebugUI) para centrarse en:
 
-*   **[vite-example](./vite-example/)**: A minimal project demonstrating how to integrate AR.js with Three.js in a modern Vite-based setup.
+Diseño modular con un sistema de complementos limpio
+ECS orientado a datos para un procesamiento eficiente
+Arquitectura basada en eventos con mensajería de publicación y suscripción
+Base independiente del renderizador para AR.js-next
+Las integraciones de renderizador residen en repositorios externos:
 
-## Plugins and Dependencies 🧩
+complemento arjs threejs
+Si necesita la API heredada, utilice 0.1.x o migre a la arquitectura ECS a continuación.
 
-The `vite-example` uses the following plugins and dependencies:
+**No tiene geolocalizacion se separo en locAR**
 
-### Development Dependencies
+Info del repo de LocAR.
 
-*   [`@types/three`](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/three)
-*   [`vite`](https://github.com/vitejs/vite)
-*   [`vite-plugin-static-copy`](https://github.com/sapphi-red/vite-plugin-static-copy)
+¿Por qué?
+La RA basada en la ubicación forma parte de AR.js desde hace tiempo. Sin embargo, este componente es prácticamente independiente de los componentes basados ​​en marcadores y NFT. Por lo tanto, conviene separarlo en un proyecto propio para que, por ejemplo, sus dependencias (principalmente three.js) puedan actualizarse sin afectar al resto de AR.js. Asimismo, el código pueda modificarse para garantizar la compatibilidad con la versión más reciente de three.js sin afectar al resto de AR.js. Esto también significa que los desarrolladores pueden trabajar en el aspecto basado en la ubicación sin necesidad de comprender el componente basado en marcadores y NFT, y que no es necesario incluir jsartoolkit.
 
-### Dependencies
-
-*   [`@ar-js-org/arjs-plugin-artoolkit`](https://github.com/ar-js-org/arjs-plugin-artoolkit)
-*   [`@ar-js-org/arjs-plugin-threejs`](https://github.com/ar-js-org/arjs-plugin-threejs)
-*   [`@ar-js-org/ar.js-next`](https://github.com/ar-js-org/ar.js-next)
-*   [`three`](https://github.com/mrdoob/three.js)
-
-These dependencies are all managed via `npm`.
+**NO HE CONSEGUIDO QUE FUNCIONE, MUCHOS PROBLEMAS CON LA CÁMARA Y EL NAVEGADOR.**
